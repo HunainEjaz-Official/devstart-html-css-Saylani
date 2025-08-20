@@ -1,0 +1,401 @@
+:root {
+    --colorbrown: #DF6951;
+    --colorblue: #181E4B;
+    --coloryellow: #FFD580;
+    --colorlytblue: #5E6282;
+}
+
+@font-face {
+    font-family: newfont;
+    src: url(./FOnt/Raleway-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: myfont;
+    src: url(./FOnt/Volkhov-Regular.ttf);
+}
+
+@font-face {
+    font-family: popins;
+    src: url(./FOnt/Poppins-Regular.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: myfont;
+}
+
+
+.navlogo img {
+    height: 40px;
+    display: block;
+}
+
+.navbaritem li {
+    font-size: 16px;
+    color: #333;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.navbaritem li:hover {
+    color: var(--colorbrown);
+    /* Optional hover effect */
+}
+
+.navbarbtns .nav-btn {
+    background-color: transparent;
+    border: none;
+    font-size: 16px;
+    padding: 10px 18px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#navspecialbtn {
+    background-color: var(--coloryellow);
+    border-radius: 8px;
+    padding: 10px 20px;
+    font-weight: 600;
+    color: #000;
+}
+
+/* .navbaritem ul {
+    display: flex;
+    gap: 40px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    align-items: flex-end;
+}
+
+.navbaritem li {
+    font-size: 16px;
+    line-height: 1;
+    display: flex;
+    align-items: flex-end;
+    padding-bottom: 3px;
+}
+
+.navbarbtns {
+    display: flex;
+    gap: 15px;
+    align-items: flex-end;
+}
+
+.navbarbtns button {
+    background-color: transparent;
+    padding: 10px 15px 4px;
+    border: none;
+    font-size: 16px;
+    line-height: 1;
+    display: flex;
+    align-items: flex-end;
+}
+
+#navspecialbtn {
+    background-color: var(--coloryellow);
+    border-radius: 9px;
+} */
+
+.leftfirstline p {
+    color: var(--colorbrown);
+}
+
+.heroheading h1 {
+    font-size: 60px;
+    color: var(--colorblue);
+    font-weight: 600;
+}
+
+.heroleftside {
+    width: 45%;
+}
+
+.herorightside img {
+
+
+    height: 500px;
+    width: 500px;
+
+}
+
+
+.herobtn button {
+    width: 200px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.herobtn button {
+    background-color: var(--coloryellow);
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 0;
+    line-height: 1;
+}
+
+.cardheading h1 {
+    color: var(--colorblue);
+    font-weight: bold;
+}
+
+.cardheading p {
+    font-family: newfont;
+    color: var(--colorlytblue);
+}
+
+
+.card-container {
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.cards {
+    width: 200px;
+    height: 230px;
+    /* background-color: #f2f2f2; */
+    border-radius: 25px;
+    /* box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* POPUP EFFECT ON HOVER */
+.cards:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    z-index: 2;
+}
+
+.cards h6 {
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.cards p {
+    color: gray;
+    font-size: 12px;
+    text-align: center;
+}
+
+/* From Uiverse.io by adamgiebl */
+.secondcards {
+    width: 250px;
+    height: 350px;
+    border-radius: 30px;
+    /* background: #e0e0e0; */
+    /* box-shadow: 15px 15px 30px #bebebe, -15px -15px 30px #ffffff; */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+
+}
+
+.secondcards img {
+    border-radius: 25px 25px 0 0;
+    height: 75%;
+    width: 100%;
+}
+
+.secondcardcontent p {
+    font-family: popins;
+}
+
+.villansection {
+    height: 550px;
+    /* background-color: #DFD7F9; */
+}
+
+.villanleft {
+    width: 50%;
+}
+
+.villanleft p,
+.questions span {
+    font-family: popins;
+    color: #5E6282;
+}
+
+.villanleft h1 {
+    font-size: 45px;
+    font-weight: bold;
+    color: var(--colorblue);
+}
+
+.villanRight {
+    width: 50%;
+}
+
+#specialspan {
+    font-size: 9px;
+
+}
+
+.subscribeSection {
+    width: 60%;
+    height: 250px;
+    margin: 0 auto;
+    background-color: #DFD7F9;
+    border-radius: 95px 15px 15px 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 80px;
+    /* Space from bottom */
+    margin-top: 100px;
+}
+
+.subscribeSection h2 {
+    font-size: 20px;
+    font-family: popins;
+    color: var(--colorblue);
+    line-height: 1.4;
+    font-weight: bold;
+}
+
+.subscribeSection input[type="email"] {
+    padding: 10px 55px 10px 25px;
+    width: 60%;
+    max-width: 400px;
+    /* border: 1px solid #ccc; */
+    border: none;
+    border-radius: 8px;
+}
+
+.subscribeSection button {
+    padding: 10px 20px;
+    color: #fff;
+    background-color: #FF7D68;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-family: popins;
+}
+
+@media (max-width:1200px) {
+    .heroheading h1 {
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 995px) {
+    .navbaritem li {
+        display: none !important;
+    }
+
+    .herosection {
+        flex-direction: column;
+    }
+
+    .heroleftside {
+        width: 55%;
+    }
+
+    .secondcard-container {
+        flex-direction: column;
+    }
+
+    .villansection {
+        flex-direction: column;
+        margin-top: 400px;
+        /* ✅ Add spacing from previous section */
+        gap: 50px;
+        /* ✅ Add spacing between left and right sides inside */
+    }
+
+    .villanleft {
+        width: 100%;
+    }
+}
+
+@media (max-width:450px) {
+
+    .nav {
+        justify-content: center;
+        align-items: center !important;
+    }
+
+    .heroleftside {
+        width: 100%;
+        text-align: center;
+    }
+
+    .heropara p {
+        font-size: 14px;
+    }
+
+    .herobtn {
+        text-align: center;
+        align-items: center;
+        justify-content: center !important;
+    }
+
+    .herorightside {
+        margin-top: 30px;
+    }
+
+    .herorightside img {
+        height: 400px;
+        width: 400px;
+
+    }
+
+    .villansection {
+        padding-top: 50px;
+    }
+
+    .villanleft {
+        width: 100%;
+        text-align: center;
+    }
+    .step1{
+        justify-content: center;
+        margin-top: 20px;
+    }
+    .questions{
+        width: 100%;
+    }
+    .villanRight{
+        display: flex;
+        align-items:center ;
+        justify-content: center;
+        width: 100%;
+        padding-bottom: 150px;
+    }
+    .villanRight img {
+        width: 80%;
+    }
+    .subscribeSection{
+        width: 100%;
+        padding: 20px !important;
+        margin: 9px;
+            border-radius: 95px 95px 15px 15px;
+
+    }
+    .villanRight {
+        display: none   ;
+    }
+    
+}
+@media (max-width:390px) {
+      #specialspan {
+        font-size: 8px;
+    }
+        .villanRight img {
+        width: 80%;
+    }
+    .subscribeSection{
+        margin: 12px;
+    }
+
+    
+}
