@@ -1,0 +1,315 @@
+@font-face {
+    font-family: "myfont";
+    src: url(./Baskervville/Baskervville-Regular.ttf);
+}
+
+* {
+
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 40px;
+}
+
+.leftside {
+    display: flex;
+    gap: 0 20px;
+}
+
+.leftside img {
+    width: 50px;
+}
+
+.leftside ul {
+    display: flex;
+    gap: 0 20px;
+    list-style-type: none;
+    color: gray;
+}
+
+.herosection {
+    min-height: 800px;
+    position: relative;
+}
+
+.imgdiv img {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.content-section {
+    position: absolute;
+    left: 150px;
+    bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-family: "myfont";
+    color: #fff;
+}
+
+.content-section h2 {
+    font-weight: 1100;
+    font-size: 42px;
+    font-weight: bold;
+}
+
+.content-section p {
+    font-weight: 500;
+    font-size: 25px;
+    font-weight: bold;
+
+}
+
+.content-section button {
+    padding: 15px;
+    width: 110px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.content-section button:hover {
+    background-color: rgba(255, 255, 255, 0.7);
+    transition: .3s;
+}
+
+
+/*  */
+
+.cardsSection {
+    padding: 80px 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+    font-family: myfont;
+}
+
+
+.headingCardDiv h2 {
+    font-size: 40px;
+    text-align: center;
+}
+
+.cardsMainDiv {
+    display: flex;
+    gap: 20px;
+}
+
+.cardDiv {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.cardImg img {
+    width: 100%;
+}
+
+.cardContentDiv {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.cardpara p {
+    color: gray;
+    font-size: 20px;
+}
+
+.cardLink a {
+    color: black;
+}
+
+.cardLink:hover .fa-greater-than {
+    transform: translateX(10px);
+    transition: all .5s;
+}
+.infoSection {
+    display: flex;
+    gap: 40px;
+    padding: 20px 20px;
+
+}
+
+.infoSection Div {
+    width: 80%;
+}
+
+.infoSection img {
+    width: 100%;
+}
+
+.contentLeftDiv {
+    display: flex;
+    flex-direction: column;
+    /* padding-left: 50px; */
+    /* justify-content: center; */
+    gap: 20px;
+}
+
+.contentLeftDiv h2 {
+    font-family: myfont;
+    font-size: 35px;
+    font-weight: bolder;
+}
+
+.contentLeftDiv p {
+    font-family: myfont;
+    font-size: 16px;
+}
+
+.contentLeftDiv button {
+    width: 120px;
+    padding: 15px;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.contentLeftDiv button:hover {
+    background-color: rgb(229, 227, 227);
+    transition: .3s;
+}
+
+#for-checking {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.footerSection {
+    padding: 80px 60px;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    font-family: myfont;
+}
+
+.listItemDiv {
+    color: #fff;
+    padding-left: 100px;
+    display: flex;
+    gap: 80px;
+}
+
+.listItemDiv ul li {
+    list-style-type: none;
+    padding: 16px 0;
+}
+
+.listItemDiv h3 {
+    font-size: 25px;
+}
+
+.listItemDiv div {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+
+.socialIconsDiv {
+    display: flex;
+    justify-content: end;
+    gap: 20px;
+    border-bottom: 1px solid;
+    padding-bottom: 20px;
+}
+
+.copyrightSection ul {
+    display: flex;
+    gap: 20px;
+}
+
+.copyrightSection ul li {
+    list-style-type: none;
+}
+
+@media (max-width:610px) {
+
+    .leftside ul,
+    .rightside i {
+        display: none;
+    }
+
+
+    .content-section {
+        left: 100px;
+
+    }
+}
+
+@media (min-width:300px) {
+    .content-section {
+        left: 40px;
+
+    }
+
+    .content-section h2 {
+        font-size: 40px;
+        font-weight: 100;
+    }
+
+    .content-section P {
+        font-size: 20px;
+        font-weight: 100;
+    }
+
+    .headingCardDiv h2 {
+        font-size: 30px;
+    }
+}
+
+@media (max-width:840px) {
+    .cardsMainDiv {
+        flex-direction: column;
+    }
+
+    .cardHeading h2 {
+        font-size: 20px;
+    }
+
+    .cardpara p {
+        font-size: 15px;
+    }
+
+    .infoSection {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contentLeftDiv {
+        padding: 0;
+    }
+
+    .contentLeftDiv h2 {
+        font-size: 20px;
+    }
+
+    .contentLeftDiv p {
+        font-size: 10px;
+    }
+
+    #for-checking{
+        flex-direction: column;
+    }
+    .listItemDiv {
+        padding-left: 0;
+        flex-wrap: wrap;
+        gap: 60px;
+    }
+    .copyrightSection {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+      .leftSection ul {
+        flex-wrap: wrap;
+    }
+}
