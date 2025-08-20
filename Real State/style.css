@@ -1,0 +1,524 @@
+:root {
+    --color1: #295FB7;
+    --color2: #fff;
+}
+
+@font-face {
+    font-family: "myfont";
+    src: url(./Baskervville/Baskervville-Regular.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.leftside img {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+}
+
+.leftside h4 {
+    color: var(--color1) !important;
+}
+
+.middle ul {
+    list-style-type: none;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+
+.rightside button {
+    border: none;
+    background-color: transparent;
+    padding: 6px 12px;
+    font-size: 14px;
+}
+
+#btn2,
+.featureContentDiv button {
+    background-color: var(--color1);
+    color: var(--color2);
+    border-radius: 10px;
+}
+
+.hero {
+    margin-top: 20px;
+    background-image: url("./Assests/Rectangl.png");
+    background-size: cover;
+    height: auto;
+    position: relative;
+
+}
+
+.contentdiv {
+    width: 50%;
+}
+
+.contentcard {
+    background-color: white;
+    padding: 20px;
+}
+
+.contentcard h6 {
+    color: black !important;
+}
+
+.container h1 {
+    font-size: 60px;
+    font-weight: bolder;
+    color: var(--color2);
+}
+
+.container h6 {
+    margin: 0 !important;
+}
+
+.container p {
+    font-size: 14px;
+    color: var(--color2);
+    margin: 0 !important;
+    /* padding-top: clamp(5px, 2vw, 15px) !important; */
+}
+
+.image {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.image img {
+    width: 500px !important;
+    opacity: 0.9;
+
+}
+
+.contentpara {
+    color: black !important;
+    font-size: 16px !important;
+}
+
+.lasticon i {
+    font-size: 22px;
+}
+
+.contentfooter {
+    padding-bottom: 25px;
+}
+
+.contentfooter i {
+    background-color: var(--color2);
+    border-radius: 50%;
+    padding: 10px;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+}
+
+.cardSection {
+    /* height: 500px; */
+    padding-bottom: 50px;
+    width: 100%;
+    background-color: #ECF4FD;
+
+}
+
+.cardheading {
+    text-align: center;
+    padding: 30px 0;
+}
+
+.cardheading h2 {
+    color: var(--color1);
+}
+
+.card1,
+.card2,
+.card3 {
+    height: 250px;
+    width: 250px;
+    background-color: var(--color2);
+}
+
+.homeicon1 {
+    height: 70px;
+    width: 70px;
+    background-color: var(--color2);
+    border-radius: 35px;
+    font-size: 34px;
+}
+
+.cardcontent1,
+.cardcontent2 {
+    text-align: center;
+    padding: 15px 15px 0 15px;
+}
+
+.cardcontent1 p {
+    font-size: 15px;
+    color: var(--color2);
+    font-family: myfont;
+
+}
+
+.specialcard {
+    background-color: var(--color1) !important;
+}
+
+.cardcontent2 p {
+    font-size: 15px;
+    font-family: myfont;
+}
+
+.homeicon2 {
+    height: 70px;
+    width: 70px;
+    border-radius: 35px;
+    font-size: 34px;
+    background-color: var(--color1);
+    color: var(--color2);
+}
+
+.newcard1,
+.newcard2,
+.newcard3 {
+    height: 340px;
+    width: 250px;
+    padding: 8px;
+    background-color: #ECF4FD;
+
+}
+
+.newcard1 img,
+.newcard2 img,
+.newcard3 img {
+    width: 100%;
+
+}
+
+.newcard1 span {
+    display: block;
+}
+
+#span2 {
+    font-size: 10px;
+}
+
+#span3 {
+    color: #FFAC33;
+}
+
+.collectionicnDiv {
+    font-size: 12px;
+}
+
+.FeatureSection {
+    padding-bottom: 20px;
+    width: 100%;
+    background-color: #ECF4FD;
+}
+
+.featureNav h2 {
+    color: var(--color1);
+    font-weight: 700;
+}
+
+.featureNav button,
+.featurehovercontent button {
+    background-color: var(--color1);
+    color: var(--color2);
+    border: none;
+    padding: 5px 15px 5px 15px;
+}
+
+
+.featureCard1,
+.featureCard2,
+.featureCard3 {
+    height: 400px;
+    width: 255px;
+    background-color: #FFAC33;
+}
+
+.featureimg img {
+    width: 100%;
+    height: 400px;
+}
+
+.featureCardDiv:hover .featurehovercontent {
+    animation: fadeInBottom 0.9s linear 0s 1 normal forwards;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.329);
+    color: var(--text-white);
+}
+
+@keyframes fadeInBottom {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.featurehovercontent h2,
+h6,
+h4 {
+    color: var(--color2) !important;
+}
+
+
+.formSection {
+    background-image: url(./Assests/pexels-photo-323780.jpeg);
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: cover;
+    margin-bottom: 20px;
+    padding-bottom: 30px;
+    padding-top: 90px;
+    opacity: .9;
+
+}
+
+.formleftside {
+    color: var(--color2);
+
+}
+
+
+/* .formDiv {
+    background-color: white;
+}
+
+.formDiv h2 {
+    color: var(--color-primary);
+} */
+.rightSide {
+    height: 300px;
+    background-color: var(--color2);
+    padding: 12px;
+
+}
+
+.rightSide h2 {
+    text-align: center;
+    font-weight: bold;
+    color: var(--color1);
+}
+
+.rightSide input {
+    padding: 10px 95px 10px 20px;
+    border: none;
+    background-color: #D0D0D0;
+    border-radius: 7px;
+}
+
+#specialinput {
+    padding: 10px 95px 50px 20px !important;
+}
+
+.btnDiv button {
+    margin-top: 10px;
+    font-weight: bold;
+    padding: 11px 125px 11px 125px;
+    background-color: var(--color1);
+    border-radius: 10px;
+    color: var(--color2);
+    border: none;
+}
+
+.footer {
+    border-top: 1px solid rgb(183, 183, 183);
+    padding-top: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+    text-align: center;
+}
+
+@media (max-width:1000px) {
+    .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .collectionCards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .featureCard {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cardSection {
+        width: 100%;
+    }
+
+    .formSection {
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    .headingDiv h1 {
+        font-size: 30px;
+        text-align: center;
+
+    }
+
+    .rightSide {
+        margin-top: 20px;
+    }
+
+}
+
+@media (max-width:1200px) {
+    .featureNav {
+        flex-direction: column;
+        padding-bottom: 15px;
+    }
+
+    .newh2 {
+        display: nono;
+    }
+
+}
+
+@media (max-width:340px) {
+
+    .rightSide  {
+        margin: 20px;
+    }
+}
+
+@media (max-width:770px) {
+    .middle {
+        display: none;
+    }
+}
+
+
+
+@media (max-width:992px) {
+    .contentdiv {
+        width: 100%;
+    }
+
+    .contentdiv h1 {
+        font-size: 40px;
+        text-align: center;
+    }
+
+    .contentdiv p {
+        font-size: 14px;
+        text-align: center;
+    }
+
+    section.hero .contentfooter {
+        justify-content: center !important;
+    }
+
+    .contentcard {
+        padding: 10px;
+    }
+
+    .contentcard .contentpara {
+        font-size: 10px !important;
+        text-align: left !important;
+    }
+
+    .contentcard .contenticon {
+        font-size: 12px !important;
+    }
+
+    .contentcard .lasticon i {
+        font-size: 18px !important;
+    }
+
+}
+
+@media (max-width:576px) {
+    .contentdiv {
+        width: 100%;
+    }
+
+    .contentdiv h1 {
+        font-size: 40px;
+        text-align: center;
+    }
+
+    .contentdiv p {
+        font-size: 14px;
+        text-align: center;
+    }
+
+    section.hero .contentfooter {
+        justify-content: center !important;
+    }
+
+    .contentcard {
+        padding: 10px;
+    }
+
+    .contentcard .contentpara {
+        font-size: 10px !important;
+        text-align: left !important;
+    }
+
+    .contentcard .contenticon {
+        font-size: 12px !important;
+    }
+
+    .contentcard .lasticon i {
+        font-size: 18px !important;
+    }
+
+    @media (max-width: 390px) {
+        .contentdiv {
+            width: 100% !important;
+            height: 500px;
+        }
+
+        .contentdiv h1,
+        .services h1,
+        .Collection h1,
+        .header h1,
+        .text h1 {
+            font-size: 30px;
+            text-align: center;
+        }
+
+        .contentcard {
+            padding: 5px;
+            gap: 0px;
+        }
+
+        .contentcard .contentpara {
+            font-size: 10px !important;
+            text-align: left !important;
+        }
+
+        .contentcard>div {
+            gap: 9px !important;
+        }
+
+
+
+
+    }
+
+}
