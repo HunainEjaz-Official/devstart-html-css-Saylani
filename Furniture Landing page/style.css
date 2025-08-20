@@ -1,0 +1,211 @@
+:root {
+    --lightblue: #DFE9F4;
+    --secondblue: #F2F5FF;
+    --Darkblue: #054C73;
+    --textwhiite: #fff;
+    --forfooter:#03344F;
+}
+
+
+@font-face {
+    font-family: myfont;
+    src: url(./FOnts/Montserrat-VariableFont_wght.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: myfont;
+    box-sizing: border-box;
+}
+
+.herosection {
+    position: relative;
+    overflow-x: hidden;
+}
+
+.herobox {
+    height: 300px;
+    width: 400px;
+    border-radius: 10px;
+    background-color: var(--lightblue);
+    position: absolute;
+    right: 100px;
+    /* right side pe le aao */
+    bottom: 15%;
+    /* center aur bottom ke beech — adjust as needed */
+    z-index: 2;
+}
+
+.heroboxtext {
+    margin: 20px;
+}
+
+.heroboxtext p {
+    font-size: 12px;
+}
+
+.heroboxtext button,.Leftside button {
+    width: fit-content;
+    /* or something like 120px */
+    padding: 8px 16px;
+    border-radius: 20px;
+    border: none;
+    background-color: var(--Darkblue);
+    color: var(--textwhiite);
+}
+
+.servicesSection {
+    height: 100px;
+    width: 100%;
+    background-color: var(--lightblue);
+}
+
+.service1Text {
+    line-height: .4;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+}
+
+
+.MidSection{
+        margin-top: 100px;
+        background-color: var(--lightblue);
+}
+.Leftside{
+    width: 35% !important;
+}
+.Rightside {
+    width: 25%;
+    position: relative; /* So the green ball can be absolutely positioned within this */
+}
+
+.green-ball {
+    position: absolute;
+    height: 190px;
+    width: 140px;
+    background-color: #09513B;
+    border-radius: 50%;
+    
+    /* Position it at the middle-right of the image */
+    top: 50%;
+    right: -75px; /* Half of ball width to push half outside */
+    transform: translateY(-50%);
+    z-index: 0; /* Behind the image */
+}
+
+.Rightside img {
+    position: relative;
+    z-index: 1; /* Image stays above the green ball */
+}
+.cards{
+    width: 20%;
+}
+.formSection{
+    height: 250px;
+    width: 100%;
+    background-color: var(--lightblue);
+}
+.formSection1{
+    width: 27% ;
+    text-align: center;
+}
+.formSection1 input {
+    border: 1px solid black;
+     padding: 10px 30px 10px 15px ;
+}
+.formSection1 button{
+    padding:10px 15px ;
+    border: none;
+    background-color: var(--forfooter);
+    color: var(--textwhiite);
+}
+.Footer{
+    height: 280px;
+    padding: 30px;
+    width: 100%;
+    background-color: var(--forfooter);
+    color: var(--textwhiite);
+}
+.footerLeft{
+    width: 40%;
+}
+@media (max-width:400px) {
+    .navitems ul li{
+        display: none;
+    }
+    .navimg{
+        padding-left: 20px;
+    }
+    .herobox{
+        /* right: 150px; */
+        left: 35px;
+        width: 300px;
+        height: 250px ;
+        
+    }
+    
+    .herobox h1{
+        font-size: 15px;
+        font-weight: bold
+    }
+    .servicesSection{
+        display: none;
+    }
+    .secondCards{
+        flex-direction: column;
+        align-items: center;
+    }
+    .MidSection{
+        flex-direction: column;
+        align-items: center;
+    }
+    .Leftside{
+        width: 100% !important;
+        align-items: center;
+        text-align: center;
+    }
+    .Rightside{
+        width: 60%;
+    }
+    .Secondcard1{
+        width: 60%;
+    }
+    .formSection1{
+        width: 100%;
+    }
+    .form{
+
+    }
+    .footerRight{
+        /* display: none; */
+        width: 80%;
+    }
+    .Footer{
+        flex-direction: column;
+        height: 350px;
+    }
+    .footerLeft{
+        width: 80%;
+    }
+    .Footerimg img{
+        height: 50px;
+        width: 50px;
+    }
+    .footerRight h5{
+        font-size: 14px;
+
+    }
+    .form input{
+             padding: 7px 25px 7px 12px ;
+
+    }
+
+    .form button{
+        padding:8px 12px ;
+    }
+
+
+}
